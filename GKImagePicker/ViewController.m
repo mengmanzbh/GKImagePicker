@@ -69,6 +69,7 @@
     self.imagePicker = [[GKImagePicker alloc] init];
     self.imagePicker.cropSize = CGSizeMake(296, 300);
     self.imagePicker.delegate = self;
+    self.imagePicker.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
 	self.imagePicker.resizeableCropArea = YES;
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
